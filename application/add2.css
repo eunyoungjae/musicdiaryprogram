@@ -1,0 +1,48 @@
+AnchorPane{
+	-fx-background-image:url('../images/26.png');
+}
+Button{
+	-fx-font-family:"Arkipelago";
+	-fx-font-size:17;
+	-fx-border-color:white;
+	-fx-background-color:white;
+	-fx-font-background-color:linear-gradient(red,pink);
+	-fx-background-radius:10.0;
+	-fx-border-radius:10.0;
+	-fx-text-fill:#EDA0C7;
+	}
+Button:hover{
+	-fx-cursor:hand;
+	-fx-background-color:white;
+	-fx-border-color:white;
+	-fx-background-radius:10.0;
+	-fx-border-radius:10.0;
+	-fx-text-fill:skyblue;	
+	
+}
+#tabFirst{
+	-fx-font-family:"Arkipelago";
+	-fx-font-size:15;
+	-fx-border-color:white;
+	-fx-background-color:white;
+	-fx-font-background-color:linear-gradient(red,pink);
+	-fx-background-radius:10.0;
+	-fx-border-radius:10.0;
+	-fx-text-fill:pink;
+}
+
+#tabSecond{
+	-fx-font-family:"Arkipelago";
+	-fx-font-size:15;
+	-fx-border-color:white;
+	-fx-background-color:white;
+	-fx-font-background-color:linear-gradient(red,pink);
+	-fx-background-radius:10.0;
+	-fx-border-radius:10.0;
+	-fx-text-fill:#EDA0C7;
+}
+TableView{
+	-fx-background:rgba(0,0,0,0.5);
+}
+
+
