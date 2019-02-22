@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="222.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<StackPane layoutX="24.0" layoutY="14.0" prefHeight="150.0" prefWidth="200.0">
+			<children>
+				<MediaView id="mediaView" fitHeight="150.0" fitWidth="200.0" />
+				<ImageView id="imgMusicPlayer" fitHeight="123.0" fitWidth="217.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../images/13.gif" />
+					</image>
+				</ImageView>
+			</children>
+		</StackPane>
+		<Button id="btnMusicPlay" layoutX="45.0" layoutY="155.0" mnemonicParsing="false" style="-fx-background-color: white;" text="▶" textFill="#11ff00">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Button>
+		<Button id="btnMusicPause" layoutX="106.0" layoutY="158.0" mnemonicParsing="false" style="-fx-background-color: white;" text="||">
+			<font>
+				<Font name="AdobeArabic-Regular" size="20.0" />
+			</font>
+		</Button>
+		<ProgressBar id="progressBar" layoutX="248.0" layoutY="165.0" prefHeight="3.0" prefWidth="132.0" progress="0.0" />
+		<Slider id="slider" layoutX="244.0" layoutY="110.0" />
+		<Label layoutX="362.0" layoutY="22.0" prefHeight="38.0" prefWidth="20.0" text="♪">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Label>
+		<Label layoutX="255.0" layoutY="14.0" text="M u s i c">
+			<font>
+				<Font size="24.0" />
+			</font>
+		</Label>
+		<Label layoutX="250.0" layoutY="42.0" text="P l a y e r">
+			<font>
+				<Font size="24.0" />
+			</font>
+		</Label>
+		<Label layoutX="247.0" layoutY="81.0" prefHeight="38.0" prefWidth="36.0" text="vol">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Label>
+		<Label id="runtime" layoutX="247.0" layoutY="136.0" prefHeight="38.0" prefWidth="132.0" text="runtime">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Label>
+		<Button id="btnMusicStop" layoutX="160.0" layoutY="155.0" mnemonicParsing="false" style="-fx-background-color: white;" text=" ■" textFill="RED">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Button>
+	</children>
+</AnchorPane>

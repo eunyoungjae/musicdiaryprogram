@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="499.0" prefWidth="900.0" stylesheets="@../application/add2.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainController">
+   <children>
+      <TabPane prefHeight="506.0" prefWidth="900.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="tabFirst" text="나의곡리스트">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="529.0" prefWidth="900.0">
+                     <children>
+                        <TableView fx:id="tableView" layoutX="328.0" layoutY="115.0" opacity="0.7" prefHeight="250.0" prefWidth="559.0">
+                          <columns>
+                              <TableColumn prefWidth="50.0" text="순서" visible="false" />
+                            <TableColumn fx:id="tbSinger" prefWidth="116.0" text="가수명" />
+                            <TableColumn fx:id="tbMusicName" prefWidth="109.0" text="곡명" />
+                              <TableColumn fx:id="tbAlbumName" prefWidth="113.0" text="앨범명" />
+                              <TableColumn fx:id="tbDate" minWidth="0.0" prefWidth="138.0" text="발매일" />
+                              <TableColumn text="장르" />
+                          </columns>
+                        </TableView>
+                        <Label layoutX="35.0" layoutY="112.0" text="가수명 :" />
+                        <Label layoutX="49.0" layoutY="154.0" text="곡명 :" />
+                        <Label layoutX="35.0" layoutY="196.0" text="앨범명 :" />
+                        <DatePicker fx:id="datePicker" layoutX="99.0" layoutY="235.0" opacity="0.7" prefHeight="33.0" prefWidth="176.0" />
+                        <Label layoutX="35.0" layoutY="240.0" text="발매일 :" />
+                        <TextField fx:id="txtSinger" layoutX="99.0" layoutY="107.0" opacity="0.7" prefHeight="33.0" prefWidth="156.0" />
+                        <TextField fx:id="txtMusicName" layoutX="99.0" layoutY="149.0" opacity="0.7" prefHeight="33.0" prefWidth="156.0" />
+                        <TextField fx:id="txtAlbumName" layoutX="99.0" layoutY="191.0" opacity="0.7" prefHeight="33.0" prefWidth="156.0" />
+                        <Button fx:id="btnAdd" layoutX="64.0" layoutY="322.0" mnemonicParsing="false" text="추가" />
+                        <Button fx:id="btnEdit" layoutX="139.0" layoutY="322.0" mnemonicParsing="false" text="수정" />
+                        <Button fx:id="btnDelete" layoutX="215.0" layoutY="322.0" mnemonicParsing="false" text="삭제" />
+                        <Label layoutX="278.0" layoutY="-3.0" style="-fx-font-family: Arkipelago; -fx-font-size: 42;" text="y">
+                           <font>
+                              <Font size="38.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="0.6359223300970874" startY="0.25728155339805825">
+                                 <stops>
+                                    <Stop color="BLACK" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                        <Label layoutX="309.0" layoutY="-12.0" style="-fx-font-family: Arkipelago; -fx-font-size: 50;" text="F">
+                           <font>
+                              <Font size="57.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="0.6359223300970874" startY="0.13592233009708737">
+                                 <stops>
+                                    <Stop color="BLACK" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                        <Label layoutX="332.0" layoutY="4.0" prefHeight="56.0" prefWidth="133.0" style="-fx-font-family: Arkipelago; -fx-font-size: 43;" text="avorite">
+                           <font>
+                              <Font size="38.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="0.7038834951456311" endY="1.0" startX="0.6359223300970874" startY="0.28640776699029125">
+                                 <stops>
+                                    <Stop color="BLACK" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                        <Label layoutX="400.0" layoutY="32.0" style="-fx-font-family: Arkipelago; -fx-font-size: 55;" text="M">
+                           <font>
+                              <Font size="57.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="0.6359223300970874" startY="0.18932038834951453">
+                                 <stops>
+                                    <Stop color="BLACK" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                        <Label layoutX="449.0" layoutY="49.0" prefHeight="56.0" prefWidth="133.0" style="-fx-font-family: Arkipelago; -fx-font-size: 43;" text="usic">
+                           <font>
+                              <Font size="38.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="0.7669902912621359" endY="1.0" startX="0.6359223300970874" startY="0.30097087378640774">
+                                 <stops>
+                                    <Stop color="BLACK" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                        <Label layoutX="519.0" layoutY="31.0" style="-fx-font-family: Arkipelago; -fx-font-size: 55;" text="L">
+                           <font>
+                              <Font size="57.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="0.6359223300970874" startY="0.18932038834951453">
+                                 <stops>
+                                    <Stop color="BLACK" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                        <Label layoutX="549.0" layoutY="52.0" prefHeight="56.0" prefWidth="133.0" style="-fx-font-family: Arkipelago; -fx-font-size: 43;" text="ist">
+                           <font>
+                              <Font size="38.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="0.6359223300970874" startY="0.18932038834951453">
+                                 <stops>
+                                    <Stop color="BLACK" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                        <Label layoutX="588.0" layoutY="25.0" prefHeight="38.0" prefWidth="17.0" text="♩">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="0.6359223300970874" startY="0.18932038834951453">
+                                 <stops>
+                                    <Stop color="BLACK" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                        <Label layoutX="602.0" layoutY="14.0" prefHeight="44.0" prefWidth="28.0" text="♪">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="0.6359223300970874" startY="0.18932038834951453">
+                                 <stops>
+                                    <Stop color="BLACK" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                        <Label layoutX="620.0" layoutY="6.0" prefHeight="44.0" prefWidth="28.0" text="♬">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="0.6359223300970874" startY="0.18932038834951453">
+                                 <stops>
+                                    <Stop color="BLACK" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                        <Label layoutX="224.0" layoutY="-18.0" style="-fx-font-family: Arkipelago; -fx-font-size: 56;" text="M">
+                           <font>
+                              <Font size="57.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="0.6359223300970874" startY="0.15048543689320387">
+                                 <stops>
+                                    <Stop color="BLACK" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                        <Label layoutX="25.0" layoutY="281.0" />
+                        <Button fx:id="btnPlay" layoutX="802.0" layoutY="72.0" mnemonicParsing="false" text="▶" textFill="#2fff00" />
+                        <Label layoutX="742.0" layoutY="80.0" text="음악재생" />
+                        <Label layoutX="49.0" layoutY="281.0" text="장르 :" />
+                        <TextField fx:id="txtMusicFile" layoutX="99.0" layoutY="276.0" opacity="0.7" prefHeight="33.0" prefWidth="156.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="tabSecond" text="가수정보">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fx:id="imgSinger01" fitHeight="150.0" fitWidth="120.0" layoutX="55.0" layoutY="36.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../images/singer01.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="btnLook01" layoutX="87.0" layoutY="195.0" mnemonicParsing="false" text="보기" />
+                        <ImageView fx:id="imgSinger04" fitHeight="150.0" fitWidth="120.0" layoutX="55.0" layoutY="240.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../images/singer03.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="imgSinger02" fitHeight="150.0" fitWidth="120.0" layoutX="287.0" layoutY="36.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../images/singer02.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="imgSinger05" fitHeight="150.0" fitWidth="120.0" layoutX="287.0" layoutY="238.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../images/singer04.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="btnLook04" layoutX="87.0" layoutY="400.0" mnemonicParsing="false" text="보기" />
+                        <Button fx:id="btnLook05" layoutX="320.0" layoutY="398.0" mnemonicParsing="false" text="보기" />
+                        <Button fx:id="btnLook02" layoutX="320.0" layoutY="193.0" mnemonicParsing="false" text="보기" />
+                        <ImageView fx:id="imgSinger03" fitHeight="150.0" fitWidth="120.0" layoutX="513.0" layoutY="38.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../images/singer05.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="btnLook03" layoutX="548.0" layoutY="195.0" mnemonicParsing="false" text="보기" />
+                        <ImageView fx:id="imgSinger06" fitHeight="150.0" fitWidth="120.0" layoutX="513.0" layoutY="240.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../images/singer06.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="btnLook06" layoutX="548.0" layoutY="400.0" mnemonicParsing="false" text="보기" />
+                        <Label layoutX="692.0" layoutY="273.0" style="-fx-font-family: Arkipelago; -fx-font-size: 43;" text="Information">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="723.0" layoutY="231.0" style="-fx-font-family: Arkipelago; -fx-font-size: 43;" text="Singer">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="697.0" layoutY="91.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/음표-소년.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="btnChart" layoutX="710.0" layoutY="398.0" mnemonicParsing="false" text="Instagram Follower" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="535.0" prefWidth="450.0" stylesheets="@../application/add2.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BarChart id="barChart" layoutY="68.0" opacity="0.8" prefHeight="400.0" prefWidth="450.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Label layoutX="168.0" layoutY="11.0" prefHeight="37.0" prefWidth="171.0" style="-fx-font-family: Arkipelago; -fx-font-size: 25;" text="Instagram Follower">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.8640776699029127">
+               <stops>
+                  <Stop color="PINK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <ImageView id="imgBar" fitHeight="44.0" fitWidth="46.0" layoutX="115.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/27.png" />
+         </image>
+      </ImageView>
+      <Button id="btnBarClose" layoutX="200.0" layoutY="480.0" mnemonicParsing="false" text="닫기" />
+      <Label layoutX="36.0" layoutY="404.0" text="만" />
+   </children>
+</AnchorPane>

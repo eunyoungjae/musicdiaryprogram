@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="554.0" prefWidth="463.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RootController">
+   <children>
+      <Button fx:id="btnClose" layoutX="262.0" layoutY="420.0" mnemonicParsing="false" text="나가기" textFill="#022e5d" />
+      <Label layoutX="150.0" layoutY="-32.0" prefHeight="119.0" prefWidth="193.0" text="usic">
+         <font>
+            <Font size="82.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.058252427184466014" endY="0.6019417475728157" startX="0.0825242718446602">
+               <stops>
+                  <Stop color="#250101" />
+                  <Stop color="#dd818b" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="btnJoin" layoutX="142.0" layoutY="420.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="65.0" text="입장" textFill="#022e5d" />
+      <Label layoutX="251.0" layoutY="45.0" prefHeight="119.0" prefWidth="193.0" style="-fx-font-size: 82; -fx-text-alig: linear-gradient(black,silver);" text="iary">
+         <font>
+            <Font size="82.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.22815533980582525" endY="0.5582524271844661" startX="0.23300970873786409">
+               <stops>
+                  <Stop color="#250101" />
+                  <Stop color="#e07985" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="81.0" layoutY="-32.0" prefHeight="119.0" prefWidth="102.0" text="M">
+         <font>
+            <Font size="82.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.09708737864077666" endY="0.5048543689320389" startX="0.09708737864077671" startY="0.04368932038834955">
+               <stops>
+                  <Stop color="#250101" />
+                  <Stop color="#dd818c" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="191.0" layoutY="45.0" prefHeight="119.0" prefWidth="102.0" style=": ; -fx-text-alig: ;" text="D">
+         <font>
+            <Font size="82.0" />
+         </font>
+         <textFill>
+            <LinearGradient endY="0.4271844660194175">
+               <stops>
+                  <Stop color="#250101" />
+                  <Stop color="#e17a86" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView id="albumImage" fitHeight="150.0" fitWidth="150.0" layoutX="75.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="39.0" layoutY="185.0" text="앨범명 :" />
+      <Label layoutX="39.0" layoutY="238.0" text="가수명 :" />
+      <Label layoutX="39.0" layoutY="289.0" text="발매일 :" />
+      <Label layoutX="39.0" layoutY="343.0" text="수록곡 :" />
+      <TextField id="txt3Album" layoutX="102.0" layoutY="180.0" prefHeight="33.0" prefWidth="184.0" />
+      <TextField id="txt3Singer" layoutX="102.0" layoutY="233.0" prefHeight="33.0" prefWidth="184.0" />
+      <TextField id="txt3Birth" layoutX="102.0" layoutY="284.0" prefHeight="33.0" prefWidth="184.0" />
+      <TextArea id="txt3AlbumSong" layoutX="102.0" layoutY="343.0" prefHeight="150.0" prefWidth="184.0" />
+      <Button id="btn3Play" layoutX="49.0" layoutY="378.0" mnemonicParsing="false" text="▶" textFill="#00ff3c" />
+      <Button id="btn3Edit" layoutX="84.0" layoutY="526.0" mnemonicParsing="false" text="수정" />
+      <Button id="btn3Close" layoutX="171.0" layoutY="526.0" mnemonicParsing="false" text="닫기" />
+   </children>
+</AnchorPane>
